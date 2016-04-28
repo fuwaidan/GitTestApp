@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="XinpinCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="140"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P0T-vk-AW4">
+                        <rect key="frame" x="5" y="6" width="134" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Jab-u8-47j"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2A-4o-36N">
+                        <rect key="frame" x="8" y="104" width="105" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IB-lX-RST">
+                        <rect key="frame" x="117" y="115" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="bNH-XB-ZfH"/>
+                            <constraint firstAttribute="width" constant="20" id="gHx-f1-VNU"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="love_Play_Icon@2x.png"/>
+                        <connections>
+                            <action selector="moviePlay:" destination="gTV-IL-0wX" eventType="touchUpInside" id="pbU-88-Eli"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PD7-dD-lie">
+                        <rect key="frame" x="8" y="123" width="99" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="P0T-vk-AW4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="0W8-hE-gxh"/>
+                <constraint firstItem="PD7-dD-lie" firstAttribute="top" secondItem="P0T-vk-AW4" secondAttribute="bottom" constant="17" id="4jX-3M-zdT"/>
+                <constraint firstItem="P0T-vk-AW4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="5aq-95-dLW"/>
+                <constraint firstAttribute="trailing" secondItem="P0T-vk-AW4" secondAttribute="trailing" constant="6" id="IIS-pc-USP"/>
+                <constraint firstAttribute="trailing" secondItem="5IB-lX-RST" secondAttribute="trailing" constant="8" id="KXw-MD-ZbK"/>
+                <constraint firstItem="5IB-lX-RST" firstAttribute="top" secondItem="P0T-vk-AW4" secondAttribute="bottom" constant="9" id="Kwg-mI-bNO"/>
+                <constraint firstAttribute="bottom" secondItem="PD7-dD-lie" secondAttribute="bottom" constant="2" id="N6M-7s-dnp"/>
+                <constraint firstItem="5IB-lX-RST" firstAttribute="leading" secondItem="l2A-4o-36N" secondAttribute="trailing" constant="4" id="Wkm-lP-ZUh"/>
+                <constraint firstAttribute="bottom" secondItem="l2A-4o-36N" secondAttribute="bottom" constant="16" id="Zvy-tH-KUz"/>
+                <constraint firstItem="PD7-dD-lie" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="bUW-1i-ZCK"/>
+                <constraint firstItem="l2A-4o-36N" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="p8d-Ku-XI9"/>
+                <constraint firstItem="5IB-lX-RST" firstAttribute="leading" secondItem="PD7-dD-lie" secondAttribute="trailing" constant="10" id="vPx-qy-9aC"/>
+                <constraint firstItem="l2A-4o-36N" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="104" id="y8R-CT-ngy"/>
+            </constraints>
+            <size key="customSize" width="124" height="73"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="PD7-dD-lie" id="j9V-SG-reA"/>
+                <outlet property="image" destination="P0T-vk-AW4" id="0xW-2G-JWF"/>
+                <outlet property="titleLabel" destination="l2A-4o-36N" id="GEZ-AZ-jvF"/>
+            </connections>
+            <point key="canvasLocation" x="236.5" y="153"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="love_Play_Icon@2x.png" width="640" height="96"/>
+    </resources>
+</document>

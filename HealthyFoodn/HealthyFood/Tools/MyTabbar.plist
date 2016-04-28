@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>selectimagename</key>
+			<string>item-cook-select@2x.png</string>
+			<key>title</key>
+			<string>视频</string>
+			<key>imagename</key>
+			<string>item-cook@2x.png</string>
+		</dict>
+		<dict>
+			<key>selectimagename</key>
+			<string>item-topic-select@2x.png</string>
+			<key>title</key>
+			<string>小吃</string>
+			<key>imagename</key>
+			<string>item-topic@2x.png</string>
+		</dict>
+		<dict>
+			<key>selectimagename</key>
+			<string>item-zs-select@2x.png</string>
+			<key>title</key>
+			<string>特色</string>
+			<key>imagename</key>
+			<string>item-zs@2x.png</string>
+		</dict>
+		<dict>
+			<key>selectimagename</key>
+			<string>item-sc-select@2x.png</string>
+			<key>title</key>
+			<string>菜系</string>
+			<key>imagename</key>
+			<string>item-sc@2x.png</string>
+		</dict>
+	</array>
+</dict>
+</plist>
